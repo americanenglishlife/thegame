@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>American Life - Tradução Oral</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="visor">
+        <div id="botoes-rodape">
+            <button id="botao-enviar">🆗</button>
+            <button onclick="reivindicarPonto()">✅</button>
+            <button onclick="voltarNivel()">⏮️</button>
+            <button onclick="avancarNivel()">⏭️</button>
+            <button onclick="togglePt()">🟢</button>
+            <button onclick="toggleEn()">🔴</button>
+            <button onclick="falarFrase()">🔁</button>
+            <button onclick="falarPt()">🔰</button>
+        </div>
+        <div id="nivel-indicador" style="text-align: center; font-size: 30px; padding-right: 80px; padding-left: 90px; writing-mode: horizontal-tb; white-space: pre; resize: both; box-sizing: content-box; align-items: start;"></div>
+        <div id="texto-exibicao"></div>
+        <div id="pt-container">
+            <textarea id="pt" rows="1" style="min-width: 700; max-width: 700; min-height: 200; max-height: 200;"></textarea>
+        </div>
+        <div id="barra-progresso" style="min-width: 320; max-width: 320;">
+            <div class="barra-verde" style="width:0%"></div>
+            <div class="barra-vermelha" style="width:0%"></div>
+        </div>
+        <div id="resultado"></div>
+        <div id="acertos"></div>
+    </div>
+    <audio id="somAcerto" src="https://cdn.freesound.org/sounds/234/234526-65937ebf-3e50-46b5-b566-e007e2be9eef?filename=234526__foolboymedia__announcement-end.wav"></audio>
+    <audio id="somErro" src="https://cdn.freesound.org/sounds/450/450616-a2108dbe-737e-4337-8eb3-f668b4b45e27?filename=450616__breviceps__8-bit-error.wav"></audio>
+    <audio id="somLevelUp" src="https://cdn.freesound.org/sounds/736/736267-1999d3f6-15cd-434d-8ef2-7863269bfb2b?filename=736267__universfield__new-notification-7.mp3"></audio>
+
+    <script src="js/frases.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
